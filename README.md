@@ -189,7 +189,8 @@ Here are the technical specifications for the RV1 Remote Controller:
    + Charging status:
       * Menu button is ***Blue***: Charging in progress.      
       * Menu button is ***Green***: Charging is complete.
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charging.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charged.png)
+
+![charging](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charging.png) ![charged](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charged.png)
 
 
 
