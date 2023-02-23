@@ -33,3 +33,5 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 
 ## Overview:
+
+![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/legend.jpg)
