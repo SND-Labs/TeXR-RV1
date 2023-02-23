@@ -180,7 +180,7 @@ Here are the technical specifications for the RV1 Remote Controller:
             Serial.println(" is ON ");
           }
           ```
-##  Charging and Power Consumption:
+##  Charging & Power Consumption:
 
    + Rated Charging Voltage ⚡: 5V
    + Rated Charging Current ⚡: 1A
@@ -203,7 +203,7 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 
 
-## Features and Modes:
+## Features & Modes:
 
 1.  Virtual Switches acts like a permanent Switch that stays *ON* even when the remote restarts.
     To *Choose* and *Activate* a **Virtual Switch**:
@@ -263,7 +263,7 @@ Here are the technical specifications for the RV1 Remote Controller:
    
 
 
-## Description and GPIO connections (useful for Creating Custom Firmwares):
+## Description & GPIO connections (useful for Creating Custom Firmwares):
 
 1.  Description:
      > The Display is the SH1106 1.3 inches OLED display
