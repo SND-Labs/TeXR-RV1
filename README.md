@@ -44,50 +44,179 @@ Here are the technical specifications for the RV1 Remote Controller:
 3. Four xiliary Switch buttons.
 4. Four Virtual Switches.
 
-## Features and Modes:
-
-1.  To navigate through the **Menu** You can use the **Thumbsticks** or the buttons:
-      * **AUX1|AUX2|AUX3|AUX4** as **Up|Down|Left|Right**
-      * The Return button
-      * The OK button
-![Dark Mode]()
-
-2.  to *Choose* and *Activate* a **Virtual Switch**:
-      * Open Menu (Menu button).
-      * You will be already in the Virtual Switches page (Page 1).
-      * Confirm by pressing the *OK* button.
-![Dark Mode]()
-
-3.  To get the **Pair a device** instructions:
-      * Open Menu (Menu button).
-      * Go to the Settings page (Page 2).
-      * select the *Pair Device* option.
-      * Confirm by pressing the *OK* button.
-![Dark Mode]()
-
-4.  To *change* the display mode, **Dark Mode** or **Light Mode**:
-      * Open Menu (Menu button).
-      * Go to the Display Mode page (Page 3).
-      * Confirm by pressing the *OK* button.
-![Dark Mode]()
-
-5.  You can *change* the **Transmission Mode**, **Performance Mode**(4ms Latency) or **Smooth Mode**(15ms Latency):
-      * Open Menu (Menu button).
-      * Go to the Transmission Mode page (Page 4).
-      * Confirm by pressing the *OK* button.
-![Dark Mode]()
-
-2. Power on the Remote Controller and your project.
-3. Use the display and buttons on the Remote Controller to control your project wirelessly.
 
 ## Getting Started:
 
-**1. Pairing the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine):** 
-  - For the simplicity we're going to use arduino for our examples but it doesnt matter what programming language you use, ***as long as you change the Mac Address to     the one showing up on the screen.***
-  - So 1st in your project's code we need to include the needed libraries (you don't need to download them):
-   ``#include <esp_now.h>``
-   ``#include <WiFi.h>``
-   ``#include <esp_wifi.h>``
+1.  To navigate through the **Menu** You can use the **Thumbsticks** or the buttons:
+      * **AUX1|AUX2|AUX3|AUX4** as **Up|Down|Left|Right**
+      * The Return button.
+      * The OK button.
+      * The Return button.
+
+2. Pairing the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine): 
+      - For the sake of simplicity we're going to use arduino programming in our examples but it doesnt matter what programming language you use, ***As LONG as you CHANGE the receiver's Mac Address to the one showing up on the screen in the "Pair Device" section at the "Settings" Menu page.***
+
+      - Step 1: We need to include the needed libraries (you don't need to download them):
       
-2. Power on the Remote Controller and your project.
-3. Use the display and buttons on the Remote Controller to control your project wirelessly.
+      ```
+      #include <esp_now.h>
+      #include <WiFi.h>
+      #include <esp_wifi.h>
+      ```
+      
+      - Step 2: We need to add a structure to hold the incomming data **| The number of Variables in the Structure NEEDS to be EXACTLY 11 |**:
+
+          ```
+          struct data_in { // this Structure will hold the received input values of the Remote Controller.
+
+          short LJX;     // left Y axis of the Thumbstick.
+          short LJY;     // left X axis of the Thumbstick.
+          short RJX;     // right Y axis of the Thumbstick.
+          short RJY;     // right Y axis of the Thumbstick.
+
+          short P1;      // Potentiometer 1.
+          short P2;      // Potentiometer 2.
+
+          byte AUX1;     // Auxiliary Switch 1.
+          byte AUX2;     // Auxiliary Switch 2.
+          byte AUX3;     // Auxiliary Switch 3.
+          byte AUX4;     // Auxiliary Switch 4.
+
+          byte V_SW;     // Virtual Switches.
+
+          };
+          data_in receivedData;
+          ```
+      - Step 3: We need to define the Mac Address that is showing up on the RV1 screen, to do that:
+                
+           * Open Menu (Menu button).
+           * Go to the Settings page (Page 2).
+           * select the *Pair Device* option.
+           * Confirm by pressing the *OK* button.
+
+           ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/settings.png)
+          
+           
+           * Receiver's MAC Address:
+           
+           *    if the Remote Controller shows:       08:3A:F2:50:C8:20
+               
+           *    Then you need to define the Mac Address like this: 
+               
+           ```
+           uint8_t newMACAddress[] = {0x08, 0x3A, 0xF2, 0x50, 0xC8, 0x20};
+           ```
+      - Step 4: Now the last thing is to do is to start receiving data with ESP-NOW protocol, simply add this code (Callback function + WiFi preferences):
+
+          ```
+          // Callback function that will be executed when data is received:
+
+          void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
+            memcpy(&receivedData, incomingData, sizeof(receivedData));
+            //Serial.print("Bytes received: "); //print received data size
+            //Serial.println(len); //print received data size
+            delay(10);
+          }
+          ```
+          ```
+          void setup() {
+          
+            // Initialize Serial Monitor
+            Serial.begin(115200);
+
+            // Set device as a WiFi Station
+            WiFi.mode(WIFI_STA);
+            esp_wifi_set_mac(WIFI_IF_STA, &newMACAddress[0]);
+
+            // Initialize ESP-NOW
+            if (esp_now_init() != ESP_OK) {
+              Serial.println("Error initializing ESP-NOW");
+              return;
+            }
+
+            // Once ESPNow is successfully initialized, we will register for receiving Callback function to
+            // receive the data and the packet info.
+            
+            esp_now_register_recv_cb(OnDataRecv);
+          }
+          ```
+          
+          * Now you are Ready to fully use the received data however you like!
+          * As an example, we can print them on the Serial Monitor:
+
+          ```
+          void loop(){
+            Serial.print(" L: X: ");
+            Serial.print(receivedData.LJX);
+            Serial.print(" Y: ");
+            Serial.print(receivedData.LJY);
+            Serial.print(" R: X: ");
+            Serial.print(receivedData.RJX);
+            Serial.print(" Y: ");
+            Serial.print(receivedData.RJY);
+
+            Serial.print(" P1: ");
+            Serial.print(receivedData.P1);
+            Serial.print(" P2: ");
+            Serial.print(receivedData.P2);
+
+            Serial.print(" AUX1: ");
+            Serial.print(receivedData.AUX1);
+            Serial.print(" AUX2: ");
+            Serial.print(receivedData.AUX2);
+            Serial.print(" AUX3: ");
+            Serial.print(receivedData.AUX3);
+            Serial.print(" AUX4: ");
+            Serial.print(receivedData.AUX4); 
+            Serial.print(" Virtual Switch N°: ");
+            Serial.print(receivedData.V_SW); 
+            Serial.println(" is ON ");
+          }
+          ```
+   
+
+## Features and Modes:
+
+1.  Virtual Switches acts like a permanent Switch that stays *ON* even when the remote restarts.
+    To *Choose* and *Activate* a **Virtual Switch**:
+      * Open Menu (Menu button).
+      * You will be already in the Virtual Switches page (Page 1).
+      * Confirm by pressing the *OK* button.
+
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/vs.png)
+
+2.  To *change* the display mode, **Dark Mode** or **Light Mode**:
+      * Open Menu (Menu button).
+      * Go to the Display Mode page (Page 3).
+      * Confirm by pressing the *OK* button.
+
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dm.png)
+
+**Dark Mode vs Light Mode**
+
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dark.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/light.png)
+
+3.  You can *change* the **Transmission Mode**, **Performance Mode**(14ms Latency) or **Smooth Mode**(25ms Latency):
+      * Open Menu (Menu button).
+      * Go to the Transmission Mode page (Page 4).
+      * Confirm by pressing the *OK* button.
+
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/tm.png)
+
+4.  RV1 supports OTA updates, meaning you can upload your own firmware, to do so:
+      * Create a mobile Hotspot using your phone or pc | **Hotspot Name: OTA** | **Hotspot password: T3XR_RV1** |
+      * Connect your PC on the recently created Hotspot.
+      * On the RV1 Open Menu (Menu button).
+      * Go to the Settings page (Page 2).
+      * Select the *update* option
+      * Confirm by pressing the *OK* button.
+      Then the Remote should Automatically connect to the Hotspot and displays an IP Address on the screen:
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/update.png)
+      * Now open your web browser and type *IP Address*/update:
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/ip.png)
+      * You should see this interface:
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/ota.png)
+      * Now Click on choose file, and browse to your BIN firmware file
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/firmware.png)
+      Then the uploading process should start automatically and once it's completed the Device will restart automatically.
+      * ***Congrats now you are running your own firmware!***
