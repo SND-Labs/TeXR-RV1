@@ -13,6 +13,9 @@ RV1 features a built-in 1.3-inch display that allows users to interact with the 
 With RV1, users can take complete control of their projects and unleash their creativity like never before, whether you're an professional embedded systems developer, an experienced robotics enthusiast or just starting out, RV1's user-friendly design ensures that it's easy to use for users of all levels. 
 
 Take your robotics projects to the next level with the advanced wireless remote controller, RV1 made by TeXR team.
+Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
+
+For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
 
 
 ## Specifications:
@@ -34,7 +37,7 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 ## Overview:
 
-![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/overview.png)
+![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/legend.png)
 
 
 ## Input:
@@ -292,3 +295,14 @@ Here are the technical specifications for the RV1 Remote Controller:
      
      > Trim Up Right Y axis -- GPIO 17 (Pull_up)
 
+
+
+## Real life Dimensions:
+
+![dim1](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim1.jpg) ![dim2](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim2.jpg) ![dim3](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim3.jpg) ![dim4](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim4.jpg)
+
+
+## Feedback:
+
+Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
+For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
