@@ -72,7 +72,6 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
   memcpy(&receivedData, incomingData, sizeof(receivedData));
   //Serial.print("Bytes received: "); //print received data size
   //Serial.println(len); //print received data size
-  debug(); //print received input's data
   delay(10);
 }
  
@@ -95,9 +94,7 @@ void setup() {
   esp_now_register_recv_cb(OnDataRecv);
 }
 
-void loop(){}
-
-void debug(){
+void loop(){
   Serial.print(" L: X: ");
   Serial.print(receivedData.LJX);
   Serial.print(" Y: ");
@@ -106,12 +103,12 @@ void debug(){
   Serial.print(receivedData.RJX);
   Serial.print(" Y: ");
   Serial.print(receivedData.RJY);
-  
+
   Serial.print(" P1: ");
   Serial.print(receivedData.P1);
   Serial.print(" P2: ");
   Serial.print(receivedData.P2);
-  
+
   Serial.print(" AUX1: ");
   Serial.print(receivedData.AUX1);
   Serial.print(" AUX2: ");
@@ -121,6 +118,7 @@ void debug(){
   Serial.print(" AUX4: ");
   Serial.print(receivedData.AUX4); 
   Serial.print(" Virtual Switch N°: ");
-  Serial.print(receivedData.AUX4); 
+  Serial.print(receivedData.V_SW); 
   Serial.println(" is ON ");
+  delay(10);
 }
