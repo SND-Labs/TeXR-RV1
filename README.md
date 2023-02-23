@@ -50,32 +50,32 @@ Here are the technical specifications for the RV1 Remote Controller:
       * **AUX1|AUX2|AUX3|AUX4** as **Up|Down|Left|Right**
       * The Return button
       * The OK button
-![Dark Mode]()
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/nav.png)
 
 2.  to *Choose* and *Activate* a **Virtual Switch**:
       * Open Menu (Menu button).
       * You will be already in the Virtual Switches page (Page 1).
       * Confirm by pressing the *OK* button.
-![Dark Mode]()
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/vs.png)
 
 3.  To get the **Pair a device** instructions:
       * Open Menu (Menu button).
       * Go to the Settings page (Page 2).
       * select the *Pair Device* option.
       * Confirm by pressing the *OK* button.
-![Dark Mode]()
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/settings.png)
 
 4.  To *change* the display mode, **Dark Mode** or **Light Mode**:
       * Open Menu (Menu button).
       * Go to the Display Mode page (Page 3).
       * Confirm by pressing the *OK* button.
-![Dark Mode]()
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dm.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dark.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/light.png)
 
 5.  You can *change* the **Transmission Mode**, **Performance Mode**(4ms Latency) or **Smooth Mode**(15ms Latency):
       * Open Menu (Menu button).
       * Go to the Transmission Mode page (Page 4).
       * Confirm by pressing the *OK* button.
-![Dark Mode]()
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/tm.png)
 
 2. Power on the Remote Controller and your project.
 3. Use the display and buttons on the Remote Controller to control your project wirelessly.
