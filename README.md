@@ -34,4 +34,53 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 ## Overview:
 
-![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/legend.jpg)
+![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/legend.png)
+
+
+## Input:
+
+1. Two Thumnsticks
+2. Two potentiometers.
+3. Four xiliary Switch buttons.
+4. Four Virtual Switches.
+
+## Features and Modes:
+
+1.  To navigate through the **Menu** You can use the **Thumbsticks** or the buttons:
+      * **AUX1|AUX2|AUX3|AUX4** as **Up|Down|Left|Right**
+      * The Return button
+      * The OK button
+![Dark Mode]()
+
+2.  to *Choose* and *Activate* a **Virtual Switch**:
+      * Open Menu (Menu button).
+      * You will be already in the Virtual Switches page (Page 1).
+      * Confirm by pressing the *OK* button.
+![Dark Mode]()
+
+3.  To **Pair a device**:
+      * Open Menu (Menu button).
+      * Go to the Settings page (Page 2).
+      * Confirm by pressing the *OK* button.
+![Dark Mode]()
+
+4.  To *change* the display mode, **Dark Mode** or **Light Mode**:
+      * Open Menu (Menu button).
+      * Go to the Display Mode page (Page 3).
+      * Confirm by pressing the *OK* button.
+![Dark Mode]()
+
+5.  You can *change* the **Transmission Mode**, **Performance Mode**(4ms Latency) or **Smooth Mode**(15ms Latency):
+      * Open Menu (Menu button).
+      * Go to the Transmission Mode page (Page 4).
+      * Confirm by pressing the *OK* button.
+![Dark Mode]()
+
+2. Power on the Remote Controller and your project.
+3. Use the display and buttons on the Remote Controller to control your project wirelessly.
+
+## Getting Started:
+
+1. Pair the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine) for your project.
+2. Power on the Remote Controller and your project.
+3. Use the display and buttons on the Remote Controller to control your project wirelessly.
