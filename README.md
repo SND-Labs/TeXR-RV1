@@ -12,8 +12,8 @@ RV1 features a built-in 1.3-inch display that allows users to interact with the 
 
 + With RV1, users can take complete control of their projects and unleash their creativity like never before, whether you're an professional embedded systems developer, an experienced robotics enthusiast or just starting out, RV1's user-friendly design ensures that it's easy to use for users of all levels. 
 
-+Make sure to visit our *[Official Facebook Page: TeXRtunisia](https://facebook.com/TeXRtunisia)*
-+For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
++ Make sure to visit our *[Official Facebook Page: TeXRtunisia](https://facebook.com/TeXRtunisia)*.
++ For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
 
 
 ## RV1 Documentation Shortcuts:
