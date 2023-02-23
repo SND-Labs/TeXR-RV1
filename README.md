@@ -53,9 +53,10 @@ Here are the technical specifications for the RV1 Remote Controller:
       * The OK button.
       * The Return button.
 
-    **2. Pairing the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine):** 
-      - For the simplicity we're going to use arduino for our examples but it doesnt matter what programming language you use, ***as long as you change the Mac Address to the one showing up on the screen.***
-      - Step 1: In your project's code we need to include the needed libraries (you don't need to download them):
+2. Pairing the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine): 
+      - For the sake of simplicity we're going to use arduino programming in our examples but it doesnt matter what programming language you use, ***As LONG as you CHANGE the receiver's Mac Address to the one showing up on the screen in the "Pair Device" section at the "Settings" Menu page.***
+
+      - Step 1: We need to include the needed libraries (you don't need to download them):
       
       ```
       #include <esp_now.h>
