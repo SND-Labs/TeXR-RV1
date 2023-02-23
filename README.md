@@ -211,12 +211,20 @@ Here are the technical specifications for the RV1 Remote Controller:
       * Select the *update* option
       * Confirm by pressing the *OK* button.
       Then the Remote should Automatically connect to the Hotspot and displays an IP Address on the screen:
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/update.png)
+      
+     ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/update.png)
+
       * Now open your web browser and type *IP Address*/update:
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/ip.png)
+      
+     ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/ip.png)
+     
       * You should see this interface:
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/ota.png)
+      
+     ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/ota.png)
+     
       * Now Click on choose file, and browse to your BIN firmware file
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/firmware.png)
+      
+     ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/firmware.png)
+
       Then the uploading process should start automatically and once it's completed the Device will restart automatically.
       * ***Congrats now you are running your own firmware!***
