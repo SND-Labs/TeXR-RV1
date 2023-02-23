@@ -173,6 +173,12 @@ Here are the technical specifications for the RV1 Remote Controller:
             Serial.println(" is ON ");
           }
           ```
+3.  Charging and Power Consumption:
+
+     * Rated Charging Voltage ⚡: 5V
+     * Rated Charging Current ⚡: 1A
+     * Active mode power consumption (Full Transmission power): 3.8v-3.6v at 1600mAh (lasts 1 hour and 50 minutes on single charge)
+     * Deep Hibernation Mode (when you trun off the device using the power button): 125mAh (lasts 24 hours on single charge).
    
 
 ## Features and Modes:
@@ -234,33 +240,55 @@ Here are the technical specifications for the RV1 Remote Controller:
       * **If you ended up bricking your device make sure to contact us at: *texr.contact@gmail.com* or on our Facebook page <FB page>
    
 
-## Description and GPIO connections for Creating Custom Firmwares:
+## Description and GPIO connections (useful when Creating Custom Firmwares:
 
 1.  Description:
-          > The Display is the SH1106 1.3 inches OLED display
-          > The Display uses I2C communication protocol
-          > i2c_Address: 0x3c
+     > The Display is the SH1106 1.3 inches OLED display
+     
+     > The Display uses I2C communication protocol
 
-2.  GPIO connections
-> Power button -- GPIO 26
-> Menu button -- GPIO 19
-> Buzzer -- GPIO 25
-> Potentiometer 1 -- GPIO 39
-> Potentiometer 2 -- GPIO 36
-> Right Y axis of the Thumbstick -- GPIO  32
-> Right X axis of the Thumbstick -- GPIO  33
-> Left Y axis of the Thumbstick -- GPIO  34
-> Left X axis of the Thumbstick -- GPIO  35
-> Auxiliary Switch 1 -- GPIO 4 (Pull_up)
-> Auxiliary Switch 2 -- GPIO 15 (Pull_up)
-> Auxiliary Switch 3 -- GPIO 3 (Pull_up)
-> Auxiliary Switch 4 -- GPIO 0 (Pull_up)
-> Trim Down Left Y axis -- GPIO 27 (Pull_up)
-> Trim UP Left Y axis -- GPIO 14 (Pull_up)
-> Trim Down Left X axis | Return -- GPIO 13 (Pull_up)
-> Trim UP Left X axis -- GPIO 12 (Pull_up)
-> Trim Down Right Y axis -- GPIO 5 (Pull_up)
-> Trim Up Right Y axis -- GPIO 18 (Pull_up)
-> Trim Down Right X axis | OK -- GPIO 16 (Pull_up)
-> Trim Up Right Y axis -- GPIO 17 (Pull_up)
+     > i2c_Address: 0x3c
+
+2.  GPIO connections:
+     > Power button -- GPIO 26
+     
+     > Menu button -- GPIO 19
+     
+     > Buzzer -- GPIO 25
+     
+     > Potentiometer 1 -- GPIO 39
+     
+     > Potentiometer 2 -- GPIO 36
+     
+     > Right Y axis of the Thumbstick -- GPIO  32
+     
+     > Right X axis of the Thumbstick -- GPIO  33
+     
+     > Left Y axis of the Thumbstick -- GPIO  34
+     
+     > Left X axis of the Thumbstick -- GPIO  35
+     
+     > Auxiliary Switch 1 -- GPIO 4 (Pull_up)
+     
+     > Auxiliary Switch 2 -- GPIO 15 (Pull_up)
+     
+     > Auxiliary Switch 3 -- GPIO 3 (Pull_up)
+     
+     > Auxiliary Switch 4 -- GPIO 0 (Pull_up)
+     
+     > Trim Down Left Y axis -- GPIO 27 (Pull_up)
+     
+     > Trim UP Left Y axis -- GPIO 14 (Pull_up)
+     
+     > Trim Down Left X axis | Return -- GPIO 13 (Pull_up)
+     
+     > Trim UP Left X axis -- GPIO 12 (Pull_up)
+     
+     > Trim Down Right Y axis -- GPIO 5 (Pull_up)
+     
+     > Trim Up Right Y axis -- GPIO 18 (Pull_up)
+     
+     > Trim Down Right X axis | OK -- GPIO 16 (Pull_up)
+     
+     > Trim Up Right Y axis -- GPIO 17 (Pull_up)
 
