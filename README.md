@@ -187,10 +187,9 @@ Here are the technical specifications for the RV1 Remote Controller:
    + Active mode power consumption (Full Transmission power): 3.8v-3.6v at 1600mAh (lasts 1 hour and 50 minutes on single charge)
    + Deep Hibernation Mode (when you trun off the device using the power button): 125mAh (lasts 24 hours on single charge).
    + Charging status:
-      * Menu button is ***Blue***: Charging in progress.
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charging.png)
+      * Menu button is ***Blue***: Charging in progress.      
       * Menu button is ***Green***: Charging is complete.
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charged.png)
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charging.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charged.png)
 
 
 
@@ -325,7 +324,9 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 ## Feedback & Contact:
 
-+ Scanning the QR code on the back of the RV1 or in the ***Pair Device*** Section on the ***Settings*** menu will redirect you to this Github Documentation Page.
+  + Scanning the QR code on the back of the RV1 or in the ***Pair Device*** Section on the ***Settings*** menu will redirect you to this Github Documentation Page.
+
 ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/back.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/qr.png)
-+ Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
-+ For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any + + + questions you may have and look forward to hearing from you.
+
+  + Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
+  + For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
