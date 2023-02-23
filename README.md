@@ -18,6 +18,18 @@ Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisi
 For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
 
 
+## RV1 Documentation Shortcuts:
+
+  1.  [Specification](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#specification)
+  2.  [Overview](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#overview)
+  3.  [Getting Started](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Getting-Started)
+  4.  [Charging and Power Consumption](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Charging-and-Power-Consumption)
+  5.  [Inputs](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#unputs)
+  6.  [Features and Modes](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Features-and-Modes)
+  7.  [Description and GPIO connections (useful when Creating Custom Firmwares)](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Description-and-GPIO-connections-useful-for-Creating-Custom-Firmwares)
+  8.  [Real life Dimensions](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Real-life-Dimensions)
+  9.  [Feedback & Contact](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Feedback-&-Contact)
+
 ## Specifications:
 
 Here are the technical specifications for the RV1 Remote Controller:
@@ -38,14 +50,6 @@ Here are the technical specifications for the RV1 Remote Controller:
 ## Overview:
 
 ![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/legend.png)
-
-
-## Input:
-
-1. Two Thumnsticks
-2. Two potentiometers.
-3. Four xiliary Switch buttons.
-4. Four Virtual Switches.
 
 
 ## Getting Started:
@@ -97,7 +101,7 @@ Here are the technical specifications for the RV1 Remote Controller:
            * select the *Pair Device* option.
            * Confirm by pressing the *OK* button.
 
-           ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/settings.png)
+           ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/pair.png)
           
            
            * Receiver's MAC Address:
@@ -176,13 +180,28 @@ Here are the technical specifications for the RV1 Remote Controller:
             Serial.println(" is ON ");
           }
           ```
-3.  Charging and Power Consumption:
+##  Charging and Power Consumption:
 
-     * Rated Charging Voltage ⚡: 5V
-     * Rated Charging Current ⚡: 1A
-     * Active mode power consumption (Full Transmission power): 3.8v-3.6v at 1600mAh (lasts 1 hour and 50 minutes on single charge)
-     * Deep Hibernation Mode (when you trun off the device using the power button): 125mAh (lasts 24 hours on single charge).
-   
+   + Rated Charging Voltage ⚡: 5V
+   + Rated Charging Current ⚡: 1A
+   + Active mode power consumption (Full Transmission power): 3.8v-3.6v at 1600mAh (lasts 1 hour and 50 minutes on single charge)
+   + Deep Hibernation Mode (when you trun off the device using the power button): 125mAh (lasts 24 hours on single charge).
+   + Charging status:
+      * Menu button is ***Blue***: Charging in progress.
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charging.png)
+      * Menu button is ***Green***: Charging is complete.
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/charged.png)
+
+
+
+## Inputs:
+
++ x2 Thumnsticks
++ x2 potentiometers.
++ x4 Auxiliary Switch buttons.
++ x4 Virtual Switches.
+
+
 
 ## Features and Modes:
 
@@ -243,7 +262,8 @@ Here are the technical specifications for the RV1 Remote Controller:
       * **If you ended up bricking your device make sure to contact us at: *texr.contact@gmail.com* or on our Facebook page *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
    
 
-## Description and GPIO connections (useful when Creating Custom Firmwares:
+
+## Description and GPIO connections (useful for Creating Custom Firmwares):
 
 1.  Description:
      > The Display is the SH1106 1.3 inches OLED display
@@ -302,7 +322,10 @@ Here are the technical specifications for the RV1 Remote Controller:
 ![dim1](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim1.jpg) ![dim2](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim2.png) ![dim3](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim3.png) ![dim4](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim4.jpg) ![dim4](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim5.png)
 
 
-## Feedback:
 
-Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
-For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
+## Feedback & Contact:
+
++ Scanning the QR code on the back of the RV1 or in the ***Pair Device*** Section on the ***Settings*** menu will redirect you to this Github Documentation Page.
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/back.png) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/qr.png)
++ Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
++ For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any + + + questions you may have and look forward to hearing from you.
