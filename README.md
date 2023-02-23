@@ -34,7 +34,7 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 ## Overview:
 
-![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.png) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/legend.png)
+![OV](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/Overview.jpg) ![legend](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/overview.png)
 
 
 ## Input:
@@ -237,7 +237,7 @@ Here are the technical specifications for the RV1 Remote Controller:
 
       Then the uploading process should start automatically and once it's completed the Device will restart automatically.
       * ***Congrats now you are running your own firmware!***
-      * **If you ended up bricking your device make sure to contact us at: *texr.contact@gmail.com* or on our Facebook page <FB page>
+      * **If you ended up bricking your device make sure to contact us at: *texr.contact@gmail.com* or on our Facebook page *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
    
 
 ## Description and GPIO connections (useful when Creating Custom Firmwares:
