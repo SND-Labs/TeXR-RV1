@@ -296,6 +296,12 @@ Here are the technical specifications for the RV1 Remote Controller:
      > Trim Up Right Y axis -- GPIO 17 (Pull_up)
 
 
+
+## Real life Dimensions:
+
+![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim1.jpg) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim2.jpg) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim3.jpg) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim4.jpg)
+
+
 ## Feedback:
 
 Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisia)*
