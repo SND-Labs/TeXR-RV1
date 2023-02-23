@@ -204,13 +204,16 @@ Here are the technical specifications for the RV1 Remote Controller:
 ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/tm.png)
 
 4.  RV1 supports OTA updates, meaning you can upload your own firmware, to do so:
+
+     ***CAUTION! UPLOADING A CUSTOM FIRMWARE CAN LEAD TO BRICKING YOUR RV1 REMOTE CONTROLLER SO AT LEAST MAKE SURE YOU HAVE AN ALREADY WORKING OTA UPDATE CODE AND TEST IT ON A ESP32 BASED PROJECT or DEV BOARD AND PROCEED CAREFULLY AND WITH DOUBLE VERIFICATION IN EVERY STEP***
+
       * Create a mobile Hotspot using your phone or pc | **Hotspot Name: OTA** | **Hotspot password: T3XR_RV1** |
       * Connect your PC on the recently created Hotspot.
       * On the RV1 Open Menu (Menu button).
       * Go to the Settings page (Page 2).
       * Select the *update* option
       * Confirm by pressing the *OK* button.
-      Then the Remote should Automatically connect to the Hotspot and displays an IP Address on the screen:
+      Then the device should display *Connecting...* then Automatically connects to the Hotspot and displays an IP Address on the screen:
       
      ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/update.png)
 
@@ -228,3 +231,36 @@ Here are the technical specifications for the RV1 Remote Controller:
 
       Then the uploading process should start automatically and once it's completed the Device will restart automatically.
       * ***Congrats now you are running your own firmware!***
+      * **If you ended up bricking your device make sure to contact us at: *texr.contact@gmail.com* or on our Facebook page <FB page>
+   
+
+## Description and GPIO connections for Creating Custom Firmwares:
+
+1.  Description:
+          > The Display is the SH1106 1.3 inches OLED display
+          > The Display uses I2C communication protocol
+          > i2c_Address: 0x3c
+
+2.  GPIO connections
+> Power button -- GPIO 26
+> Menu button -- GPIO 19
+> Buzzer -- GPIO 25
+> Potentiometer 1 -- GPIO 39
+> Potentiometer 2 -- GPIO 36
+> Right Y axis of the Thumbstick -- GPIO  32
+> Right X axis of the Thumbstick -- GPIO  33
+> Left Y axis of the Thumbstick -- GPIO  34
+> Left X axis of the Thumbstick -- GPIO  35
+> Auxiliary Switch 1 -- GPIO 4 (Pull_up)
+> Auxiliary Switch 2 -- GPIO 15 (Pull_up)
+> Auxiliary Switch 3 -- GPIO 3 (Pull_up)
+> Auxiliary Switch 4 -- GPIO 0 (Pull_up)
+> Trim Down Left Y axis -- GPIO 27 (Pull_up)
+> Trim UP Left Y axis -- GPIO 14 (Pull_up)
+> Trim Down Left X axis | Return -- GPIO 13 (Pull_up)
+> Trim UP Left X axis -- GPIO 12 (Pull_up)
+> Trim Down Right Y axis -- GPIO 5 (Pull_up)
+> Trim Up Right Y axis -- GPIO 18 (Pull_up)
+> Trim Down Right X axis | OK -- GPIO 16 (Pull_up)
+> Trim Up Right Y axis -- GPIO 17 (Pull_up)
+
