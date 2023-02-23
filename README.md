@@ -58,9 +58,10 @@ Here are the technical specifications for the RV1 Remote Controller:
       * Confirm by pressing the *OK* button.
 ![Dark Mode]()
 
-3.  To **Pair a device**:
+3.  To get the **Pair a device** instructions:
       * Open Menu (Menu button).
       * Go to the Settings page (Page 2).
+      * select the *Pair Device* option.
       * Confirm by pressing the *OK* button.
 ![Dark Mode]()
 
@@ -81,6 +82,12 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 ## Getting Started:
 
-1. Pair the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine) for your project.
+**1. Pairing the Remote Controller with a receiver (any ESP microcontroller or dev board will work completely fine):** 
+  - For the simplicity we're going to use arduino for our examples but it doesnt matter what programming language you use, ***as long as you change the Mac Address to     the one showing up on the screen.***
+  - So 1st in your project's code we need to include the needed libraries (you don't need to download them):
+   ``#include <esp_now.h>``
+   ``#include <WiFi.h>``
+   ``#include <esp_wifi.h>``
+      
 2. Power on the Remote Controller and your project.
 3. Use the display and buttons on the Remote Controller to control your project wirelessly.
