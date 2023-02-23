@@ -299,7 +299,7 @@ Here are the technical specifications for the RV1 Remote Controller:
 
 ## Real life Dimensions:
 
-![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim1.jpg) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim2.jpg) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim3.jpg) ![Dark Mode](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim4.jpg)
+![dim1](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim1.jpg) ![dim2](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim2.jpg) ![dim3](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim3.jpg) ![dim4](https://github.com/SND-Labs/TeXR-RV1/blob/main/Documentation/dim4.jpg)
 
 
 ## Feedback:
