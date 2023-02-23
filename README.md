@@ -23,10 +23,10 @@ For any inquiries or business-related matters, please do not hesitate to contact
   1.  [Specification](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#specification)
   2.  [Overview](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#overview)
   3.  [Getting Started](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Getting-Started)
-  4.  [Charging and Power Consumption](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Charging-and-Power-Consumption)
+  4.  [Charging & Power Consumption](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Charging-&-Power-Consumption)
   5.  [Inputs](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#unputs)
-  6.  [Features and Modes](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Features-and-Modes)
-  7.  [Description and GPIO connections (useful when Creating Custom Firmwares)](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Description-and-GPIO-connections-useful-for-Creating-Custom-Firmwares)
+  6.  [Features & Modes](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Features-&-Modes)
+  7.  [Description & GPIO connections (useful when Creating Custom Firmwares)](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Description-&-GPIO-connections-useful-for-Creating-Custom-Firmwares)
   8.  [Real life Dimensions](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Real-life-Dimensions)
   9.  [Feedback & Contact](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#Feedback-&-Contact)
 
