@@ -178,6 +178,7 @@ Here are the technical specifications for the RV1 Remote Controller:
             Serial.print(" Virtual Switch N°: ");
             Serial.print(receivedData.V_SW); 
             Serial.println(" is ON ");
+            delay(10);
           }
           ```
 ##  Charging & Power Consumption:
