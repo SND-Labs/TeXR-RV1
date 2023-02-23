@@ -18,7 +18,7 @@ Make sure to visit our *[Official Facebook Page](https://facebook.com/TeXRtunisi
 For any inquiries or business-related matters, please do not hesitate to contact us via email at *texr.contact@gmail.com* . We are always available to answer any questions you may have and look forward to hearing from you.
 
 
-## Summary:
+## RV1 Documentation Shortcuts:
 
   1.  [Specification](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#specification)
   2.  [Overview](https://github.com/SND-Labs/TeXR-RV1/blob/main/README.md#overview)
