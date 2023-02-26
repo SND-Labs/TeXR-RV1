@@ -183,8 +183,8 @@ Here are the technical specifications for the RV1 Remote Controller:
 
    + Rated Charging Voltage ⚡: 5V
    + Rated Charging Current ⚡: 1A
-   + Active mode power consumption (Full Transmission power): 3.8v-3.6v at 1600mAh (lasts 1 hour and 50 minutes on single charge)
-   + Deep Hibernation Mode (when you trun off the device using the power button): 125mAh (lasts 24 hours on single charge).
+   + Active mode power consumption (Full Transmission power): 4.25v-3.6v at 240mAh (lasts 2 Hours on single charge)
+   + Hibernation Mode (when you trun off the device using the power button): 125mAh (lasts 24 hours on single charge).
    + Charging status:
       * Menu button is ***Blue***: Charging in progress.      
       * Menu button is ***Green***: Charging is complete.
